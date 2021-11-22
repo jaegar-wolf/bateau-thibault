@@ -1,20 +1,20 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Bateau Thibault
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <h1>Le bateau de Thibault</h1>
+  <p>Vente en direct de notre bateau </p>
+  <p>Produits selon la saison, Livraisons sur Paris</p>
+  <p>06.63.99.99.78</p>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <button ion-button (click)="onGoToProd_Prom()">Produits et promotions</button>
+  <button ion-button (click)="onGoToBateaux()">Bateaux</button>
+  <button ion-button (click)="onGoToRestaurants()">Restaurants</button>
+  <button ion-button (click)="onGoToRecettes()">Recettes</button>
+  <button ion-button (click)="onGoToContact()">Contact</button>
 </ion-content>
