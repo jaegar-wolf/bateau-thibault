@@ -7,11 +7,11 @@
 <ion-content padding>
   <ion-list>
     <ion-item ion-item *ngFor="let bateau of bateauxList" (click)="onLoadBateau(bateau)">
-      <button>
+      <ion-button>
         <ion-label>
           {{ bateau.name }}
         </ion-label>
-      </button>
+      </ion-button>
     </ion-item>
   </ion-list>
 </ion-content>
