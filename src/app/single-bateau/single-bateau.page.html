@@ -6,17 +6,17 @@
 
 <ion-content padding>
   <ion-card>
-    <ion-card-header>{{ bateauname }}</ion-card-header>
+    <ion-card-header>{{ bateau.name }}</ion-card-header>
     <ion-card-content>
       <p *ngFor="let line of bateau.description">{{ line }}</p>
     </ion-card-content>
     <ion-grid>
       <ion-row>
         <ion-col>
-          <button ion-button full>Ajouter au panier</button>
+          <ion-button full>Ajouter au panier</ion-button>
         </ion-col>
         <ion-col>
-          <button ion-button full>Supprimer du panier</button>
+          <ion-button full>Supprimer du panier</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
