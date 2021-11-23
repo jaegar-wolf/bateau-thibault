@@ -4,6 +4,14 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding>
+  <ion-list>
+    <ion-item ion-item *ngFor="let bateau of bateauxList" (click)="onLoadBateau(bateau)">
+      <button>
+        <ion-label>
+          {{ bateau.name }}
+        </ion-label>
+      </button>
+    </ion-item>
+  </ion-list>
 </ion-content>

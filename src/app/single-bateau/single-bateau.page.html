@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ bateau.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>{{ bateauname }}</ion-card-header>
+    <ion-card-content>
+      <p *ngFor="let line of bateau.description">{{ line }}</p>
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <button ion-button full>Ajouter au panier</button>
+        </ion-col>
+        <ion-col>
+          <button ion-button full>Supprimer du panier</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>
