@@ -15,7 +15,6 @@ export class SingleRestaurantPage implements OnInit {
     this.route.queryParams.subscribe(params => {
       if(this.router.getCurrentNavigation().extras.state) {
         this.restaurant = this.router.getCurrentNavigation().extras.state.restaurant;
-        console.log(this.restaurant);
       }
     });
 

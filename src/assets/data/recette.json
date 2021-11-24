@@ -2,24 +2,25 @@
     {
         "id": 0,
         "name": "Homard en chaud-froid",
-        "img": "assets\\pictures\\vueBT",
+        "img": "../assets/App_Resources/iOS/homardRecette.png",
         "comments": "célèbre bateau naviguant dans l'Atlantique à la recherche de poissons fabuleux"
     },
     {
         "id": 1,
         "name": "Noix de Saint-Jacques flambées au cognac",
-        "img": "assets\\pictures\\vueBT",
+        "img": "../assets/App_Resources/iOS/saintJacques.png",
         "comments": "Qu'il est chaud le soleil Quand nous sommes en vacances Y a d'la joie, et putain de merde c'est quoi ces descriptions à la con"
     },
     {
         "id": 2,
         "name": "Bar rôti au laurier frais",
-        "img": "assets\\pictures\\vueBT",
+        "img": "../assets/App_Resources/iOS/barRecette.png",
         "comments": "Qu'il est chaud le soleil Quand nous sommes en vacances Y a d'la joie, et putain de merde c'est quoi ces descriptions à la con"
     },
     {
         "id": 3,
-        "name": "Fourteau ",
+        "name": "Tourteau ",
+        "img":"../assets/App_Resources/iOS/tourteau.png",
         "comments": "Qu'il est chaud le soleil Quand nous sommes en vacances Y a d'la joie, et putain de merde c'est quoi ces descriptions à la con"
     }
 ]

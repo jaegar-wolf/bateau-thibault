@@ -6,19 +6,11 @@
 
 <ion-content padding>
   <ion-card>
-    <ion-card-header>{{ bateau.name }}</ion-card-header>
     <ion-card-content>
-      <p>{{bateau.owner}}</p>
+      <img [src]="bateau.img">
+      <p>Couleur : {{bateau.color}}</p>
+      <p>{{bateau.comments}}</p>
+      <p>Propriétaire: {{bateau.owner}}</p>
     </ion-card-content>
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-button full>Ajouter au panier</ion-button>
-        </ion-col>
-        <ion-col>
-          <ion-button full>Supprimer du panier</ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
   </ion-card>
 </ion-content>

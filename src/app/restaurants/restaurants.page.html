@@ -1,10 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>restaurants</ion-title>
+    <ion-title>Restaurants partenaire</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <h6>Tous les restaurant partenaire avec le bateau de Thibault.</h6>
+  <p>06.63.99.99.78</p>
+  <p>lebateauthibault@gmail.com</p>
+  <p>www.facebook.com/lebateauthibault</p>
+
   <ion-list>
     <ion-item *ngFor="let restaurant of restaurantsList" (click)="onLoadRestaurant(restaurant)">
       <ion-button>

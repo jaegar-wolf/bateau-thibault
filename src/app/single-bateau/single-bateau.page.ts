@@ -14,7 +14,6 @@ export class SingleBateauPage implements OnInit {
     this.route.queryParams.subscribe(params => {
       if(this.router.getCurrentNavigation().extras.state) {
         this.bateau = this.router.getCurrentNavigation().extras.state.bateau;
-        console.log(this.bateau);
       }
     });
 

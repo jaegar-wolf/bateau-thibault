@@ -14,7 +14,6 @@ export class SingleRecettePage implements OnInit {
     this.route.queryParams.subscribe(params => {
       if(this.router.getCurrentNavigation().extras.state) {
         this.recette = this.router.getCurrentNavigation().extras.state.recette;
-        console.log(this.recette);
       }
     });
 

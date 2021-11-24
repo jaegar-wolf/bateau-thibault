@@ -1,10 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>recettes</ion-title>
+    <ion-title>Nos Recette</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <h6>Toutes les recettes du bateau de Thibault.</h6>
+  <p>06.63.99.99.78</p>
+  <p>lebateauthibault@gmail.com</p>
+  <p>www.facebook.com/lebateauthibault</p>
   <ion-list>
     <ion-item *ngFor="let recette of recettesList" (click)="onLoadRecette(recette)">
       <ion-button>

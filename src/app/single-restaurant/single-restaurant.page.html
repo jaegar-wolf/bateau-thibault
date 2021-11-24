@@ -6,19 +6,10 @@
 
 <ion-content padding>
   <ion-card>
-    <ion-card-header>{{ restaurant.name }}</ion-card-header>
     <ion-card-content>
+      <img [src]="restaurant.img">
       <p>{{ restaurant.comments }}</p>
+      <p>Propriétaire: {{ restaurant.owner }}</p>
     </ion-card-content>
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-button full>Ajouter au panier</ion-button>
-        </ion-col>
-        <ion-col>
-          <ion-button full>Supprimer du panier</ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
   </ion-card>
 </ion-content>

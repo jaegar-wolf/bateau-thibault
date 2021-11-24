@@ -6,19 +6,9 @@
 
 <ion-content padding>
   <ion-card>
-    <ion-card-header>{{ recette.name }}</ion-card-header>
     <ion-card-content>
+      <img [src]="recette.img">
       <p>{{recette.comments}}</p>
     </ion-card-content>
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-button full>Ajouter au panier</ion-button>
-        </ion-col>
-        <ion-col>
-          <ion-button full>Supprimer du panier</ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
   </ion-card>
 </ion-content>

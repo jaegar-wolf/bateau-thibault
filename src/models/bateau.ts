@@ -4,13 +4,12 @@ export class Bateau {
     name: string;
     color: string;
     img: string;
-    availability: boolean;
     comments: string;
     owner: string;
+    icon: string;
     
 
     constructor(name: string){
         this.name = name;
-        this.availability = false;
     }
 }

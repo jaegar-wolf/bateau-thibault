@@ -3,36 +3,36 @@
         "id": 0,
         "name": "De la Brise",
         "color": "red",
-        "img": "assets\\pictures\\vueBT",
-        "availability": true,
+        "img": "../assets/App_Resources/iOS/deLaBrise.png",
         "comments": "célèbre bateau naviguant dans l'Atlantique à la recherche de poissons fabuleux",
-        "owner": "Barbe Noire"
+        "owner": "Barbe Noire",
+        "icon": "../assets/App_Resources/iOS/deLaBrise_icon.ico"
     },
     {
         "id": 1,
         "name": "Saphir",
         "color": "blue",
-        "img": "assets\\pictures\\vueBT",
-        "availability": true,
+        "img": "../assets/App_Resources/iOS/saphir.png",
         "comments": "Qu'il est chaud le soleil Quand nous sommes en vacances Y a d'la joie, et putain de merde c'est quoi ces descriptions à la con",
-        "owner": "Shanks le Roux"
+        "owner": "Shanks le Roux",
+        "icon":"../assets/App_Resources/iOS/saphir_icon.png"
     },
     {
         "id": 2,
         "name": "Gast Micher",
         "color": "dark red",
-        "img": "assets\\pictures\\vueBT",
-        "availability": true,
+        "img": "../assets/App_Resources/iOS/gastMicher.png",
         "comments": "Qu'il est chaud le soleil Quand nous sommes en vacances Y a d'la joie, et putain de merde c'est quoi ces descriptions à la con",
-        "owner": "Kaïdo"
+        "owner": "Kaïdo",
+        "icon":"../assets/App_Resources/iOS/gastMicher_icon.png"
     },
     {
         "id": 3,
         "name": "Aquilon",
         "color": "dark blue",
-        "img": "assets\\pictures\\vueBT",
-        "availability": true,
+        "img": "../assets/App_Resources/iOS/aquilon.png",
         "comments": "Qu'il est chaud le soleil Quand nous sommes en vacances Y a d'la joie, et putain de merde c'est quoi ces descriptions à la con",
-        "owner": "Fat Mom"
+        "owner": "Fat Mom",
+        "icon":"../assets/App_Resources/iOS/aquilon_icon.png"
     }
 ]

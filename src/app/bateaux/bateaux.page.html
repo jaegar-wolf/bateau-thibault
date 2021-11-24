@@ -1,12 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>bateaux</ion-title>
+    <ion-title>Nos bateaux</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+
+  <h5>Tous les eaux mènent à Thibault.</h5>
+  <p>06.63.99.99.78</p>
+  <p>lebateauthibault@gmail.com</p>
+  <p>www.facebook.com/lebateauthibault</p>
   <ion-list>
     <ion-item *ngFor="let bateau of bateauxList" (click)="onLoadBateau(bateau)">
+      <img [src]="bateau.icon">
       <ion-button>
         <ion-label>
           {{ bateau.name }}
