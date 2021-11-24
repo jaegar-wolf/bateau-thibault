@@ -6,7 +6,7 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item ion-item *ngFor="let bateau of bateauxList" (click)="onLoadBateau(bateau)">
+    <ion-item *ngFor="let bateau of bateauxList" (click)="onLoadBateau(bateau)">
       <ion-button>
         <ion-label>
           {{ bateau.name }}

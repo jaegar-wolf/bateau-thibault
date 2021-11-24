@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Restaurant } from 'src/models/restaurant';
 
 @Component({
   selector: 'app-single-restaurant',
@@ -8,11 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SingleRestaurantPage implements OnInit {
 
-  restaurantName: any;
-  restaurant: {
-    name: string,
-    description: string[]
-  };
+  restaurant: Restaurant[];
 
   constructor(private route: ActivatedRoute, private router: Router) {
     this.route.queryParams.subscribe(params => {

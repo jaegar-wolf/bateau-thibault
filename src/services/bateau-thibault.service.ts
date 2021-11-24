@@ -19,6 +19,18 @@ export class BateauThibaultService {
   constructor(private http : HttpClient) { }
 
   getBateaux():Observable<Bateau[]>{
-    return this.http.get<Bateau[]>('assets/data/all.json');
+    return this.http.get<Bateau[]>('assets/data/boats.json');
+  }
+
+  getProduct():Observable<Produits[]>{
+    return this.http.get<Produits[]>('assets/data/product.json');
+  }
+
+  getRestaurant():Observable<Restaurant[]>{
+    return this.http.get<Restaurant[]>('assets/data/restaurant.json')
+  }
+
+  getRecette():Observable<Recette[]>{
+    return this.http.get<Recette[]>('assets/data/recette.json')
   }
 }

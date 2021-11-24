@@ -6,12 +6,12 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item ion-item *ngFor="let restaurant of restaurantsList" (click)="onLoadRestaurant(restaurant)">
-      <button>
+    <ion-item *ngFor="let restaurant of restaurantsList" (click)="onLoadRestaurant(restaurant)">
+      <ion-button>
         <ion-label>
           {{ restaurant.name }}
         </ion-label>
-      </button>
+      </ion-button>
     </ion-item>
   </ion-list>
 </ion-content>
