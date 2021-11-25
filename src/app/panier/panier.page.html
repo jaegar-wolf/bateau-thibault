@@ -10,6 +10,10 @@
         <ion-label>
           {{ produit.name }}
         </ion-label>
+        <ion-label slot="end">
+          {{produit.price}} €
+          <ion-button (click)="removeFromPanier(produit.id)">Remove</ion-button>
+        </ion-label>
     </ion-item>
   </ion-list>
 

@@ -24,11 +24,12 @@ export class PanierPage implements OnInit {
     });
    }
 
-  ngOnInit() {
-    this.produits = this.route.snapshot.data.produits;
+  async ngOnInit() {
+    this.produits = await this.storage.getAll()
   }
 
-  afficher(){
-    //return this.storage.get(this.produit);
+  removeFromPanier(id: string){
+    this.storage.del(id);
+    this.router.navigate(['/panier']);
   }
 }
