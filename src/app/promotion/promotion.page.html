@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>promotion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+      
+    <ng-container *ngFor="let produit of produitsList">
+      <ion-item *ngIf='produit.discount !== 0'>
+      <ion-label>
+        {{produit.name}}
+      </ion-label>
+      </ion-item>
+    </ng-container>
+      
+    
+  </ion-list>
+
+</ion-content>
