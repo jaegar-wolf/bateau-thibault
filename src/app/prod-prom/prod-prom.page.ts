@@ -12,25 +12,30 @@ export class ProdPromPage implements OnInit {
 
  produitsList: Produits[];
 
-  constructor(private router: Router, private bateauThibaultService: BateauThibaultService) { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {
-    this.bateauThibaultService.getProduct().subscribe(res => {
-      this.produitsList = res;
-    },
-    err => {
-      console.log("error")
-    }
-    );
+  onGoToCrustaces(){
+    this.router.navigate(['/crustaces']);
+    
+ 
+   }
+  onGoToPoissons(){
+    this.router.navigate(['/poissons']);
 
   }
-  onLoadProduit(produit: Produits[]) {
-    let navigationExtras: NavigationExtras = {
-      state: {
-        produit:produit
-      }
-    };
-    console.log(produit);
-    this.router.navigate(['/single-produit'], navigationExtras);
-  }
+
+  
+
+  onGoToCoquilllages(){
+    this.router.navigate(['/coquillages']);
+    
+ }
+ 
+ onGoToPromotion(){
+  this.router.navigate(['/promotion']);
+}
+ngOnInit() {  
+}
+
+  
 }

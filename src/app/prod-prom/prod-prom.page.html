@@ -3,18 +3,13 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-title class="title_page">Produits et Promotions</ion-title>
+    <ion-title class="title_page">Choisissez vos produits</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-    <ion-item *ngFor="let produit of produitsList" (click)="onLoadProduit(produit)">
-      <ion-button>
-        <ion-label>
-          {{ produit.name }}
-        </ion-label>
-      </ion-button>
-    </ion-item>
-  </ion-list>
+  <ion-button (click)="onGoToPoissons()">Poissons</ion-button>
+  <ion-button (click)="onGoToCrustaces()">Crustaces</ion-button>
+  <ion-button (click)="onGoToCoquilllages()">Coquillage</ion-button>
+  <ion-button (click)="onGoToPromotion()">Promotion</ion-button>
 </ion-content>

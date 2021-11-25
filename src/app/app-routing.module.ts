@@ -47,6 +47,22 @@ const routes: Routes = [
     path: 'single-recette',
     loadChildren: () => import('./single-recette/single-recette.module').then( m => m.SingleRecettePageModule)
   },
+  {
+    path: 'crustaces',
+    loadChildren: () => import('./crustaces/crustaces.module').then( m => m.CrustacesPageModule)
+  },
+  {
+    path: 'poissons',
+    loadChildren: () => import('./poissons/poissons.module').then( m => m.PoissonsPageModule)
+  },
+  {
+    path: 'coquillages',
+    loadChildren: () => import('./coquillages/coquillages.module').then( m => m.CoquillagesPageModule)
+  },
+  {
+    path: 'promotion',
+    loadChildren: () => import('./promotion/promotion.module').then( m => m.PromotionPageModule)
+  },
 ];
 
 @NgModule({

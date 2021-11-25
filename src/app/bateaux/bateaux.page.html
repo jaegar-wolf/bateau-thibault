@@ -15,7 +15,9 @@
   <p>www.facebook.com/lebateauthibault</p>
   <ion-list>
     <ion-item *ngFor="let bateau of bateauxList" (click)="onLoadBateau(bateau)">
-      <img [src]="bateau.icon">
+      <ion-avatar>
+        <img [src]="bateau.icon">
+      </ion-avatar>
       <ion-button>
         <ion-label>
           {{ bateau.name }}
