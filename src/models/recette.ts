@@ -3,6 +3,7 @@ export class Recette {
     name: string;
     img: string;
     comments: string;
+    icon: string;
 
     constructor(name: string) {
         this.name = name;
