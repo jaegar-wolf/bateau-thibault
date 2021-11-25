@@ -1,6 +1,6 @@
 [
     {
-        "id": 12,
+        "id": "12",
         "name": "Aile de raie",
         "category": 0,
         "price": 10.0,
@@ -12,7 +12,7 @@
         "owner": "tig"
     },
     {
-        "id": 9,
+        "id": "9",
         "name": "Araignées",
         "category": 2,
         "price": 7.0,
@@ -24,7 +24,7 @@
         "owner": "tig"
     },
     {
-        "id": 3,
+        "id": "3",
         "name": "Bar de ligne",
         "category": 0,
         "price": 30.0,
@@ -36,7 +36,7 @@
         "owner": "tig"
     },
     {
-        "id": 2,
+        "id": "2",
         "name": "Bar de ligne portion",
         "category": 0,
         "price": 10.0,
@@ -48,7 +48,7 @@
         "owner": "tig"
     },
     {
-        "id": 10,
+        "id": "10",
         "name": "Bouquets cuits",
         "category": 1,
         "price": 8.0,
@@ -60,7 +60,7 @@
         "owner": "tig"
     },
     {
-        "id": 1,
+        "id": "1",
         "name": "Filet Bar de ligne",
         "category": 0,
         "price": 7.0,
@@ -72,7 +72,7 @@
         "owner": "tig"
     },
     {
-        "id": 5,
+        "id": "5",
         "name": "Filet Julienne",
         "category": 0,
         "price": 19.0,
@@ -84,7 +84,7 @@
         "owner": "tig"
     },
     {
-        "id": 7,
+        "id": "7",
         "name": "Huitres N°2 St Vaast",
         "category": 1,
         "price": 9.5,
@@ -96,7 +96,7 @@
         "owner": "tig"
     },
     {
-        "id": 8,
+        "id": "8",
         "name": "Huitres N°2 St Vaast",
         "category": 1,
         "price": 38.0,
@@ -108,7 +108,7 @@
         "owner": "tig"
     },
     {
-        "id": 13,
+        "id": "13",
         "name": "Huîtres N°2 OR St Vaast",
         "category": 1,
         "price": 12.0,
@@ -120,7 +120,7 @@
         "owner": "tig"
     },
     {
-        "id": 14,
+        "id": "14",
         "name": "Huîtres N°2 OR St Vaast",
         "category": 1,
         "price": 24.0,
@@ -132,7 +132,7 @@
         "owner": "tig"
     },
     {
-        "id": 15,
+        "id": "15",
         "name": "Huîtres N°2 OR St Vaast",
         "category": 1,
         "price": 48.0,
@@ -144,7 +144,7 @@
         "owner": "tig"
     },
     {
-        "id": 16,
+        "id": "16",
         "name": "Huîtres N°2 St Vaast",
         "category": 1,
         "price": 19.0,
@@ -156,7 +156,7 @@
         "owner": "tig"
     },
     {
-        "id": 4,
+        "id": "4",
         "name": "Lieu jaune de ligne",
         "category": 0,
         "price": 12.0,
@@ -168,7 +168,7 @@
         "owner": "tig"
     },
     {
-        "id": 6,
+        "id": "6",
         "name": "Moules de pêche",
         "category": 1,
         "price": 7.0,

@@ -63,6 +63,10 @@ const routes: Routes = [
     path: 'promotion',
     loadChildren: () => import('./promotion/promotion.module').then( m => m.PromotionPageModule)
   },
+  {
+    path: 'panier',
+    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
+  },
 ];
 
 @NgModule({
