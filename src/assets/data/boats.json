@@ -15,7 +15,7 @@
         "img": "../assets/App_Resources/iOS/saphir.png",
         "comments": "Qu'il est chaud le soleil Quand nous sommes en vacances Y a d'la joie, et putain de merde c'est quoi ces descriptions à la con",
         "owner": "Shanks le Roux",
-        "icon":"../assets/App_Resources/iOS/saphir_icon.png"
+        "icon":"../assets/App_Resources/iOS/saphir_icon.ico"
     },
     {
         "id": 2,
@@ -24,7 +24,7 @@
         "img": "../assets/App_Resources/iOS/gastMicher.png",
         "comments": "Qu'il est chaud le soleil Quand nous sommes en vacances Y a d'la joie, et putain de merde c'est quoi ces descriptions à la con",
         "owner": "Kaïdo",
-        "icon":"../assets/App_Resources/iOS/gastMicher_icon.png"
+        "icon":"../assets/App_Resources/iOS/gastMicher_icon.ico"
     },
     {
         "id": 3,
@@ -33,6 +33,6 @@
         "img": "../assets/App_Resources/iOS/aquilon.png",
         "comments": "Qu'il est chaud le soleil Quand nous sommes en vacances Y a d'la joie, et putain de merde c'est quoi ces descriptions à la con",
         "owner": "Fat Mom",
-        "icon":"../assets/App_Resources/iOS/aquilon_icon.png"
+        "icon":"../assets/App_Resources/iOS/aquilon_icon.ico"
     }
 ]
