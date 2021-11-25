@@ -1,12 +1,14 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
     <ion-title>Poissons</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
     <ion-list>
-      
       <ng-container *ngFor="let produit of produitsList">
         <ion-item *ngIf='produit.category === 0'>
         <ion-label>
@@ -14,11 +16,11 @@
         </ion-label>
         <ion-label slot="end">
           {{produit.price}} €
+          <ion-button (click)="saveToPanier(produit.id, produit)">Add</ion-button>
         </ion-label>
         </ion-item>
       </ng-container>
-        
-      
     </ion-list>
-
+    <ion-button (click)="goToPanier()">Panier</ion-button>
 </ion-content>
+
