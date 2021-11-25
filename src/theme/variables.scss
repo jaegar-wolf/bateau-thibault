@@ -17,15 +17,8 @@
   .goRight{
     text-align: right;
   }
-  ion-content{
-    --ion-background-color: #2a9d8f !important;
-  }
-  ion-header{
-    --ion-background-color: #264653 !important;
-  }
-  ion-footer{
-    --ion-background-color: #c6dabf !important;
-  }
+
+
 
 
 
@@ -171,7 +164,7 @@
    */
 
   .ios body {
-    --ion-background-color: #000000;
+    --ion-background-color: #c6dabf;
     --ion-background-color-rgb: 0,0,0;
 
     --ion-text-color: #ffffff;
@@ -214,8 +207,12 @@
    * -------------------------------------------
    */
 
+  .foot{
+    --ion-background-color: #2a9d8f !important;
+  }
+  
   .md body {
-    --ion-background-color: #121212;
+    --ion-background-color: #c6dabf;
     --ion-background-color-rgb: 18,18,18;
 
     --ion-text-color: #ffffff;
@@ -245,7 +242,7 @@
 
     --ion-item-background: #1e1e1e;
 
-    --ion-toolbar-background: #1f1f1f;
+    --ion-toolbar-background: #264653;
 
     --ion-tab-bar-background: #1f1f1f;
 
