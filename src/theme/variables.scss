@@ -14,6 +14,19 @@
   .title_page{
     text-align: center;
   }
+  .goRight{
+    text-align: right;
+  }
+  ion-content{
+    --ion-background-color: #2a9d8f !important;
+  }
+  ion-header{
+    --ion-background-color: #264653 !important;
+  }
+  ion-footer{
+    --ion-background-color: #c6dabf !important;
+  }
+
 
 
   /** secondary **/
@@ -237,5 +250,6 @@
     --ion-tab-bar-background: #1f1f1f;
 
     --ion-card-background: #1e1e1e;
+    --ion-grid-width-xs: 75%;
   }
 }
