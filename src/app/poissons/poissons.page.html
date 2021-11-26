@@ -16,11 +16,14 @@
         </ion-label>
         <ion-label slot="end">
           {{produit.price}} €
-          <ion-button (click)="saveToPanier(produit.id, produit)">Add</ion-button>
+          <ion-icon name="add-circle-outline" (click)="saveToPanier(produit.id, produit)"></ion-icon>
         </ion-label>
         </ion-item>
       </ng-container>
     </ion-list>
-    <ion-button (click)="goToPanier()">Panier</ion-button>
+    <ion-button expand="full" color="secondary"  (click)="goToPanier()">
+      <ion-icon name="bag-outline"></ion-icon>
+      <p>   Panier</p>
+    </ion-button>
 </ion-content>
 
