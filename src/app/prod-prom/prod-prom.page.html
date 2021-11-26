@@ -8,13 +8,23 @@
 </ion-header>
 
 <ion-content padding>
+  <h5 class="title">Voici une sélection de plusieurs produits</h5>
   <ion-list>
     <ion-button expand="full"  (click)="onGoToPoissons()">
       <ion-icon name="fish-outline" slot="start"></ion-icon>
       Poissons
     </ion-button>
-    <ion-button (click)="onGoToCrustaces()">Crustaces</ion-button>
-    <ion-button (click)="onGoToCoquilllages()">Coquillages</ion-button>
-    <ion-button (click)="onGoToPromotion()">Promotion</ion-button>
+    <ion-button (click)="onGoToCrustaces()">
+      <ion-icon name="arrow-forward-circle-outline" slot="end"></ion-icon>
+      Crustaces
+    </ion-button>
+    <ion-button (click)="onGoToCoquilllages()">
+      <ion-icon name="arrow-forward-circle-outline" slot="end"></ion-icon>
+      Coquillages
+    </ion-button>
+    <ion-button expand="full" (click)="onGoToPromotion()">
+      <ion-icon name="pricetag-outline" slot="start"></ion-icon>
+      Promotion
+    </ion-button>
   </ion-list>
 </ion-content>

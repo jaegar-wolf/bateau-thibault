@@ -8,13 +8,14 @@
 </ion-header>
 
 <ion-content padding>
-  <h6>Tous les restaurant partenaire avec le bateau de Thibault.</h6>
-  <p>06.63.99.99.78</p>
-  <p>lebateauthibault@gmail.com</p>
-
+  <div class="title">
+    <h6>Tous les restaurant partenaire avec le bateau de Thibault.</h6>
+    <p>06.63.99.99.78</p>
+    <p>lebateauthibault@gmail.com</p>
+  </div>
   <ion-list>
     <ion-item *ngFor="let restaurant of restaurantsList" (click)="onLoadRestaurant(restaurant)">
-      <ion-button>
+      <ion-button color="warning">
         <ion-label>
           {{ restaurant.name }}
         </ion-label>

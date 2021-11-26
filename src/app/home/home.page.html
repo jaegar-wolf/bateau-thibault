@@ -8,29 +8,31 @@
 
 <ion-content>
   <ion-grid>
-    <ion-row>
-      <h1>Le bateau de Thibault</h1>
-    </ion-row>
-    <ion-row>
-      <p>Vente en direct de notre bateau </p>
-    </ion-row>
-    <ion-row>
-      <p>Produits selon la saison, Livraisons sur Paris</p>
-    </ion-row>
+    <div class="title">
+      <ion-row >
+        <h3>Le bateau de Thibault</h3>
+      </ion-row>
+      <ion-row>
+        <p>Vente en direct de notre bateau </p>
+      </ion-row>
+      <ion-row>
+        <p>Produits selon la saison, Livraisons sur Paris</p>
+      </ion-row>
+    </div>
     <ion-row>
       <ion-col>
-        <ion-button expand="block" (click)="onGoToProd_Prom()">Produits et promotions</ion-button>
+        <ion-button expand="block" (click)="onGoToProd_Prom()" color="secondary">Produits et promotions</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="block" (click)="onGoToBateaux()">Bateaux</ion-button>
+        <ion-button expand="block" (click)="onGoToBateaux()" color="secondary">Bateaux</ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button expand="block" (click)="onGoToRestaurants()">Restaurants</ion-button>
+        <ion-button expand="block" (click)="onGoToRestaurants()" color="secondary">Restaurants</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="block" (click)="onGoToRecettes()">Recettes</ion-button>
+        <ion-button expand="block" (click)="onGoToRecettes()" color="secondary">Recettes</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -39,11 +41,11 @@
     <ion-row>
       <ion-col (click)="onGoToContact()">
         <ion-icon name="reader-outline"></ion-icon>
-        <ion-text>  Contact</ion-text>
+        <ion-text class="text">  Contact</ion-text>
       </ion-col>
       <ion-col class="goRight">
         <ion-icon name="call-outline"> </ion-icon>
-        <ion-text> 06 63 99 99 78</ion-text>
+        <ion-text class="text"> 06 63 99 99 78</ion-text>
       </ion-col>
     </ion-row>
 </ion-footer>

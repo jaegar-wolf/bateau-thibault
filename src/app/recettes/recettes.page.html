@@ -8,16 +8,18 @@
 </ion-header>
 
 <ion-content padding>
-  <h6>Toutes les recettes du bateau de Thibault.</h6>
-  <p>06.63.99.99.78</p>
-  <p>lebateauthibault@gmail.com</p>
-  <p>www.facebook.com/lebateauthibault</p>
+  <div class="title">
+    <h6>Toutes les recettes du bateau de Thibault.</h6>
+    <p>06.63.99.99.78</p>
+    <p>lebateauthibault@gmail.com</p>
+    <p>www.facebook.com/lebateauthibault</p>
+  </div>
   <ion-list>
     <ion-item *ngFor="let recette of recettesList" (click)="onLoadRecette(recette)">
       <ion-avatar>
         <img [src]="recette.icon">
       </ion-avatar>
-      <ion-button>
+      <ion-button color="warning">
         <ion-label>
           {{ recette.name }}
         </ion-label>
