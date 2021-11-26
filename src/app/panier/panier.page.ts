@@ -28,8 +28,8 @@ export class PanierPage implements OnInit {
     this.produits = await this.storage.getAll()
   }
 
-  removeFromPanier(id: string){
+  async removeFromPanier(id: string){
     this.storage.del(id);
-    this.router.navigate(['/panier']);
+    this.produits = await this.storage.getAll();
   }
 }
