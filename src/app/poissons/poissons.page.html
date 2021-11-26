@@ -1,9 +1,9 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="title_page">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-title>Poissons</ion-title>
+    <ion-title class="title_page">Poissons</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,18 +12,19 @@
       <ng-container *ngFor="let produit of produitsList">
         <ion-item *ngIf='produit.category === 0'>
         <ion-label>
-          {{produit.name}}
+          {{produit.name}} - {{produit.price}} €
         </ion-label>
         <ion-label slot="end">
-          {{produit.price}} €
-          <ion-icon name="add-circle-outline" (click)="saveToPanier(produit.id, produit)"></ion-icon>
+          <ion-button (click)="saveToPanier(produit.id, produit)" color="success">
+            <ion-icon name="add-circle-outline"></ion-icon>
+          </ion-button>
         </ion-label>
         </ion-item>
       </ng-container>
     </ion-list>
-    <ion-button expand="full" color="secondary"  (click)="goToPanier()">
-      <ion-icon name="bag-outline"></ion-icon>
-      <p>   Panier</p>
+    <ion-button expand="full" color="warning"  (click)="goToPanier()">
+      <ion-icon name="bag-outline" slot="start"></ion-icon>
+        Panier
     </ion-button>
 </ion-content>
 

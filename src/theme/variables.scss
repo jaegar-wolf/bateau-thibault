@@ -10,9 +10,14 @@
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #3171e0;
   --ion-color-primary-tint: #4c8dff;
+  --ion-toolbar-background: #264653;
+  --ion-toolbar-text:white;
+  --ion-back-button: white;
+  --ion-content-background: grey;
 
   .title_page{
     text-align: center;
+    color: white;
   }
   .goRight{
     text-align: right;
@@ -122,7 +127,7 @@
     --ion-color-success-shade: #29c467;
     --ion-color-success-tint: #44e283;
 
-    --ion-color-warning: #ffd534;
+    --ion-color-warning: #f78f07;
     --ion-color-warning-rgb: 255,213,52;
     --ion-color-warning-contrast: #000000;
     --ion-color-warning-contrast-rgb: 0,0,0;

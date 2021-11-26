@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="title_page">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
@@ -8,8 +8,13 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-button (click)="onGoToPoissons()">Poissons</ion-button>
-  <ion-button (click)="onGoToCrustaces()">Crustaces</ion-button>
-  <ion-button (click)="onGoToCoquilllages()">Coquillages</ion-button>
-  <ion-button (click)="onGoToPromotion()">Promotion</ion-button>
+  <ion-list>
+    <ion-button expand="full"  (click)="onGoToPoissons()">
+      <ion-icon name="fish-outline" slot="start"></ion-icon>
+      Poissons
+    </ion-button>
+    <ion-button (click)="onGoToCrustaces()">Crustaces</ion-button>
+    <ion-button (click)="onGoToCoquilllages()">Coquillages</ion-button>
+    <ion-button (click)="onGoToPromotion()">Promotion</ion-button>
+  </ion-list>
 </ion-content>
