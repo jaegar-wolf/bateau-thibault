@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { Produits } from 'src/models/produits';
 import { StorageService } from 'src/services/storage.service';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-panier',
@@ -14,7 +15,8 @@ export class PanierPage implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private storage: StorageService
+    private storage: StorageService,
+    private toastCtrl: ToastController
   ) {
     this.produits = [];
     this.router.events.subscribe(event => {
@@ -28,8 +30,22 @@ export class PanierPage implements OnInit {
     this.produits = await this.storage.getAll()
   }
 
-  async removeFromPanier(id: string){
+  async removeFromPanier(id: string, produit: Produits){
     this.storage.del(id);
-    this.produits = await this.storage.getAll();
+    this.openToast(produit);
+    this.produits = await this.storage.getAll();     
+  }
+
+  async openToast(produit: Produits){
+    const toast = await this.toastCtrl.create({  
+      message: "Ce produit qui n'a pas de nom a bien été supprimé.",   
+      position: "bottom",
+      duration: 2000
+    });  
+    toast.present();
+    toast.onDidDismiss().then((val) => {  
+        console.log('Toast Dismissed');   
+    });  
   }
 }
+  
