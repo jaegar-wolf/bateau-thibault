@@ -11,11 +11,12 @@
   <ion-list>
     <ion-item *ngFor="let produit of produits">
         <ion-label>
-          {{ produit.name }}
+          {{ produit.name }} - {{produit.price}} €
         </ion-label>
         <ion-label slot="end">
-          {{produit.price}} €
-          <ion-button (click)="removeFromPanier(produit.id)">Remove</ion-button>
+          <ion-button (click)="removeFromPanier(produit.id)" color="danger">
+            <ion-icon name="remove-circle-outline"></ion-icon>
+          </ion-button>
         </ion-label>
     </ion-item>
   </ion-list>
