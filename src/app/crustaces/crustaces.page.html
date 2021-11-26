@@ -11,7 +11,7 @@
   <ion-list>
     <ng-container *ngFor="let produit of produitsList">
       <ion-item *ngIf='produit.category === 2'>
-      <ion-label>
+      <ion-label class="white">
         {{produit.name}} - {{produit.price}} €
       </ion-label>
       <ion-label slot="end">

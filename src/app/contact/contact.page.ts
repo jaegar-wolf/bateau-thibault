@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { EmailComposer } from '@ionic-native/email-composer/ngx';
 
 @Component({
   selector: 'app-contact',
@@ -8,7 +7,7 @@ import { EmailComposer } from '@ionic-native/email-composer/ngx';
 })
 export class ContactPage implements OnInit {
 
-  constructor(private emailComposer: EmailComposer) { }
+  constructor() { }
 
   ngOnInit() {
   }
@@ -17,7 +16,7 @@ export class ContactPage implements OnInit {
     window.location.href=url;
   }
 
-  sendMailTo(app: any){
+  /*sendMailTo(app: any){
     this.emailComposer.getClients().then((apps: []) => {
       // Returns an array of configured email clients for the device
    });
@@ -59,6 +58,6 @@ export class ContactPage implements OnInit {
    
    // Send a text message using default options
    this.emailComposer.open(email);
-  }  
+  } */
 
 }
