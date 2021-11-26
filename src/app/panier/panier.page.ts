@@ -11,6 +11,7 @@ import { ToastController } from '@ionic/angular';
 })
 export class PanierPage implements OnInit {
   produits: Produits[];
+  vide: boolean;
 
   constructor(
     private router: Router,
@@ -28,12 +29,18 @@ export class PanierPage implements OnInit {
 
   async ngOnInit() {
     this.produits = await this.storage.getAll()
+    if(this.produits.length == 0) {
+      this.vide = true;
+    }
   }
 
   async removeFromPanier(id: string, produit: Produits){
     this.storage.del(id);
     this.openToast(produit);
-    this.produits = await this.storage.getAll();     
+    this.produits = await this.storage.getAll();
+    if(this.produits.length == 0) {
+      this.vide = true;
+    }     
   }
 
   async openToast(produit: Produits){
