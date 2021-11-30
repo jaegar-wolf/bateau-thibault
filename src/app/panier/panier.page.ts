@@ -45,7 +45,7 @@ export class PanierPage implements OnInit {
 
   async openToast(produit: Produits){
     const toast = await this.toastCtrl.create({  
-      message: "Ce produit qui n'a pas de nom a bien été supprimé.",   
+      message: "Ce produit a bien été supprimé.",   
       position: "bottom",
       duration: 2000
     });  
