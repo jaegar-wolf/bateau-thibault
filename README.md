@@ -5,8 +5,8 @@ Vous pouvez la télécharger et la lancer.
 ## Installation
 Pour pouvoir lancer l'application il vous faut tout d'abord [nodejs](https://nodejs.org/fr/download/)  
 
-Si vous aves déjà nodejs, vous pouvez installer [ionic](https://ionicframework.com/docs/intro/cli) avec cette commande :  
-
+Si vous aves déjà nodejs, vous pouvez installer le framework [ionic](https://ionicframework.com/docs/intro/cli) avec cette commande:    
+*si vous n'avez pas angular il sera installé en même temps qu'ionic*  
 ```bash
 npm install -g @ionic/cli
 ```
