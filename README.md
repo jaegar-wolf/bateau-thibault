@@ -1,5 +1,5 @@
-# bateau-thibault
-Le bateau tibault est une simple application mobile développé en Angular Ionic.  
+# Bateau-thibault
+Le bateau tibault est une simple application mobile développé en Angular Ionic, par Mickael SCETBON, Adel MEDJDOUB et Mathieu ALBIN.  
 Vous pouvez la télécharger et la lancer.
 
 ## Installation
