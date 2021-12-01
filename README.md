@@ -11,6 +11,12 @@ Si vous aves déjà nodejs, vous pouvez installer le framework [ionic](https://i
 ```bash
 npm install -g @ionic/cli
 ```
+Si jamais vous aviez déjà installé ionic auparavant:
+
+```bash
+npm uninstall -g ionic
+npm install -g @ionic/cli
+```
 
 Rendez-vous ensuite dans le dossier où vous avez téléchargé l'application, ouvrez un terminal et taper cette commande:  
 ```bash
